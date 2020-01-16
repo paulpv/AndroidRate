@@ -10,7 +10,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    buildToolsVersion '29.0.1'
     defaultConfig {
         //noinspection MinSdkTooLow
         minSdkVersion 9
@@ -47,10 +47,10 @@ android {
     }
 }
 dependencies {
-    compileOnly 'androidx.annotation:annotation:1.0.0'
-    api 'androidx.appcompat:appcompat:1.0.0'
+    compileOnly 'androidx.annotation:annotation:1.1.0'
+    api 'androidx.appcompat:appcompat:1.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlin_version}"
-    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
 }
 apply from: 'https://raw.github.com/Vorlonsoft/EasyDokkaPlugin/master/dokka.gradle'
 apply from: 'https://raw.github.com/Vorlonsoft/GradleMavenPush/master/maven-push.gradle'
